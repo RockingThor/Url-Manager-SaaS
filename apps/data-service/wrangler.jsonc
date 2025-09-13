@@ -18,4 +18,12 @@
       "experimental_remote": true
     }
   ],
+  "kv_namespaces": [
+	{
+		"binding": "CACHE",
+		"id": "738bbdfd5a5143a8876553ea399072ee",
+		"experimental_remote": true
+	}
+]
+
 }
