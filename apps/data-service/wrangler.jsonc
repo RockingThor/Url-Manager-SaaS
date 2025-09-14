@@ -9,6 +9,33 @@
 	"compatibility_date": "2025-06-17",
 	"compatibility_flags": ["nodejs_compat"],
 	"observability": {
-		"enabled": true,
+		"enabled": true
 	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_id": "0d4fd3be-934d-4a80-acd9-894312df58f3",
+			"experimental_remote": true
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "CACHE",
+			"id": "738bbdfd5a5143a8876553ea399072ee",
+			"experimental_remote": true
+		}
+	],
+	"queues": {
+		"consumers": [
+			{
+				"queue": "url-queue-stage"
+			}
+		],
+		"producers": [
+			{
+				"binding": "QUEUE",
+				"queue": "url-queue-stage"
+			}
+		]
+	}
 }
