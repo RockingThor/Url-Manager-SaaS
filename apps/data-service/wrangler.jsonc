@@ -11,6 +11,9 @@
 	"observability": {
 		"enabled": true
 	},
+	"browser": {
+		"binding": "VIRTUAL_BROWSER"
+	},
 	"d1_databases": [
 		{
 			"binding": "DB",
@@ -37,5 +40,21 @@
 				"queue": "url-queue-stage"
 			}
 		]
-	}
+	},
+	"workflows": [
+		{
+			"binding": "DESTINATION_EVALUATION_WORKFLOW",
+			"name": "destination-evaluation-workflow",
+			"class_name": "DestinationEvaluationWorkflow"
+		}
+	],
+	"ai": {
+		"binding": "AI"
+	},
+	"r2_buckets": [
+		{
+			"binding": "BUCKET",
+			"bucket_name": "url-stage"
+		}
+	]
 }
